@@ -1,6 +1,13 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/no-webpack-loader-syntax */
+/* eslint-disable @typescript-eslint/no-var-requires */
 import React, { useState } from 'react';
 import ReactMapGL from 'react-map-gl';
+import mapboxgl from 'mapbox-gl';
 import { MapProps } from './types';
+
+(mapboxgl as any).workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const TOKEN = process.env.MAPBOX_TOKEN;
 
