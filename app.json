@@ -1,0 +1,8 @@
+{
+  "name": "DevMap2",
+  "displayName": "DevMap2",
+  "packagerOpts": {
+    "config": "metro.config.js",
+    "sourceExts": ["js", "jsx", "ts", "tsx", "svg"]
+  }
+}

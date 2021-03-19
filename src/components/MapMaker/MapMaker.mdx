@@ -1,0 +1,37 @@
+---
+name: MapMaker
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Map from '../Map/index.web.tsx';
+import MapMaker from './index.web.tsx';
+import { Text } from 'react-native';
+
+# MapMaker
+
+This component is a wrapper to MapMaker, must use code for react and react native,
+because the library to mapbox on react and react native is different.
+
+## Properties
+
+<Props of={MapMaker} />
+
+## Basic usage
+
+<Playground>
+  <div style={{ width: '100%', height: 300 }}>
+    <Map
+      defaultLatitude={-12.9704}
+      defaultLongitude={-38.5124}
+      defaultZoom={6}
+      mapStyle="mapbox://styles/mapbox/dark-v9"
+    >
+      <MapMaker latitude={-12.9704} longitude={-38.5124} id="id">
+        <Text style={{ fontSize: 20, color: '#8257e6', fontWeight: 900 }}>
+          Marker
+        </Text>
+      </MapMaker>
+    </Map>
+  </div>
+</Playground>

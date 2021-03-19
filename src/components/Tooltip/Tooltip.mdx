@@ -1,0 +1,37 @@
+---
+name: Tooltip
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Tooltip from './index.tsx';
+import TooltipWeb from './index.web.tsx';
+import { Text } from 'react-native';
+
+# Tooltip Mobile
+
+This component must use code for react and react native,
+because in mobile not have mouse to hover, and to show
+the tooltip need press the content.
+
+## Properties
+
+<Props of={Tooltip} />
+
+## Basic usage
+
+### Mobile Behavior
+
+<Playground>
+  <Tooltip title="this is a tooltip">
+    <Text style={{ fontSize: 20, color: '#8257e6' }}> Press Me! </Text>
+  </Tooltip>
+</Playground>
+
+### Web Behavior
+
+<Playground>
+  <TooltipWeb title="this is a tooltip">
+    <Text style={{ fontSize: 20, color: '#8257e6' }}> Hover Me! </Text>
+  </TooltipWeb>
+</Playground>

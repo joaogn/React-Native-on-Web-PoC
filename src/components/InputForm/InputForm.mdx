@@ -1,0 +1,36 @@
+---
+name: InputForm
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import InputForm from './index.tsx';
+import GithubIcon from '../../assets/icons/mark-github.svg';
+
+# InputForm
+
+Input to forms using only react native code.
+
+## Properties
+
+<Props of={InputForm} />
+
+## Basic usage
+
+### Without Icon
+
+<Playground>
+  <InputForm placeholder="placeholder" />
+</Playground>
+
+### With Icon
+
+<Playground>
+  <InputForm icon={GithubIcon} placeholder="placeholder" />
+</Playground>
+
+### With Error
+
+<Playground>
+  <InputForm placeholder="placeholder" error="with error" />
+</Playground>

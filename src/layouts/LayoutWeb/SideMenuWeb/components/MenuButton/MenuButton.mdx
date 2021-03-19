@@ -1,0 +1,34 @@
+---
+name: MenuButton
+menu: SideMenu
+---
+
+import { Playground, Props } from 'docz';
+import MenuButton from './index.tsx';
+import WorldIcon from '../../../../../assets/icons/world.svg';
+
+# MenuButton
+
+This component is a button to add on side menu
+
+## Properties
+
+<Props of={MenuButton} />
+
+## Basic usage
+
+<Playground>
+  <MenuButton
+    icon={WorldIcon}
+    handlePress={() => navigation.navigate('Home')}
+    isActive={true}
+  />
+
+    <MenuButton
+    icon={WorldIcon}
+    handlePress={() => navigation.navigate('Home')}
+    isActive={false}
+
+/>
+
+</Playground>

@@ -1,0 +1,40 @@
+---
+name: FloatingButton
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import FloatingButton from './index.tsx';
+import FloatingButtonWeb from './index.web.tsx';
+import { Text } from 'react-native';
+import WorldIcon from '../../assets/icons/world.svg';
+
+# Tooltip Mobile
+
+Floating Button using one code to react native and other to react web, because the hover.
+
+## Properties
+
+<Props of={FloatingButton} />
+
+## Basic usage
+
+### Mobile Behavior
+
+<Playground>
+  <div style={{ width: '100%', height: 40 }}>
+    <FloatingButton top={0} right={0}>
+      <WorldIcon fill="#fff" />
+    </FloatingButton>
+  </div>
+</Playground>
+
+### Web Behavior
+
+<Playground>
+  <div style={{ width: '100%', height: 40 }}>
+    <FloatingButtonWeb bottom={0} left={0}>
+      <WorldIcon fill="#fff" />
+    </FloatingButtonWeb>
+  </div>
+</Playground>
